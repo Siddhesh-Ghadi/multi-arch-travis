@@ -8,6 +8,10 @@ sudo: required
 
 dist: bionic
 
+arch:
+  - ppc64le
+  - amd64
+
 jobs:
   include:
    - stage: building ppc64le image
