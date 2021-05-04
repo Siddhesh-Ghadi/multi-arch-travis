@@ -4,8 +4,6 @@ os: linux
 
 services: docker
 
-sudo: required
-
 dist: bionic
 
 arch: 
