@@ -2,11 +2,11 @@
 
 export DOCKER_CLI_EXPERIMENTAL=enabled
 
-docker manifest create quay.io/rpsene/multi-arch-travis:latest \
-quay.io/rpsene/multi-arch-travis:x86_64 quay.io/rpsene/multi-arch-travis:ppc64le quay.io/rpsene/multi-arch-travis:s390x
+docker manifest create quay.io/rohan_shinde_98/multi-arch-travis:latest \
+quay.io/rohan_shinde_98/multi-arch-travis:x86_64 quay.io/rohan_shinde_98/multi-arch-travis:ppc64le quay.io/rohan_shinde_98/multi-arch-travis:s390x
 
-docker manifest inspect quay.io/rpsene/multi-arch-travis
+docker manifest inspect quay.io/rohan_shinde_98/multi-arch-travis
 
 docker login quay.io -u "$ROBOT_USER" -p $ROBOT_TOKEN
 
-docker manifest push quay.io/rpsene/multi-arch-travis:latest
+docker manifest push quay.io/rohan_shinde_98/multi-arch-travis:latest
