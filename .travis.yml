@@ -15,15 +15,15 @@ jobs:
   include:
    - stage: building ppc64le image
      arch: ppc64le
-     script: chmod +x ./build.sh
+     script: chmod +x ./build.sh; ./build.sh
      
    - stage: building x86_64 image
      arch: amd64
-     script: chmod +x ./build.sh
+     script: chmod +x ./build.sh; ./build.sh
      
    - stage: building s390x image
      arch: s390x
-     script: chmod +x ./build.sh
+     script: chmod +x ./build.sh; ./build.sh
      
    - stage: building multi-arch image
-     script: chmod +x ./create-multi-arch.sh
+     script: chmod +x ./create-multi-arch.sh; ./create-multi-arch.sh
