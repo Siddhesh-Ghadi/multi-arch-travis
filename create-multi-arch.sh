@@ -3,7 +3,7 @@
 export DOCKER_CLI_EXPERIMENTAL=enabled
 
 docker manifest create quay.io/rpsene/multi-arch-travis:latest \
-quay.io/rpsene/multi-arch-travis:x86_64 quay.io/rpsene/multi-arch-travis:ppc64le
+quay.io/rpsene/multi-arch-travis:x86_64 quay.io/rpsene/multi-arch-travis:ppc64le quay.io/rpsene/multi-arch-travis:s390x
 
 docker manifest inspect quay.io/rpsene/multi-arch-travis
 
