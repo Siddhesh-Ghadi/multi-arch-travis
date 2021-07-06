@@ -23,9 +23,9 @@ arch:
 
 jobs:
   include:
-   - stage: building ppc64le image
-     arch: ppc64le
-     script: chmod +x ./build.sh; ./build.sh
+#    - stage: building ppc64le image
+#      arch: ppc64le
+#      script: chmod +x ./build.sh; ./build.sh
    - stage: building x86_64 image
      arch: amd64
      script: chmod +x ./build.sh; ./build.sh
